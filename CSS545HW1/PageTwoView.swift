@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  PageTwoView.swift
 //  CSS545HW1
 //
 //  Created by Mari Rosenwald on 4/6/24.
@@ -7,20 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PageTwoView: View {
     var body: some View {
         NavigationView{
             VStack {
-                //            PageTwoView()
-                Text("Hello, world!")
+                Text("Page Two")
                     .font(.title)
-                Text("Page One")
-                    .font(.title2)
                 NavigationLink {
                     // destination view to navigation to
-                    PageTwoView()
+                    ContentView()
                 } label: {
-                    Text("Next Page")
+                    Text("Back to home page")
                 }
             }
             .padding()
@@ -29,5 +26,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    PageTwoView()
 }
